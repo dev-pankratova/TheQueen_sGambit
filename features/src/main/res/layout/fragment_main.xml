@@ -1,83 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_main"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        app:title="Пушкина, 61/2"
-        app:titleMargin="@dimen/app_padding_16dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/search_edt_txt"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginStart="@dimen/app_padding_16dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="@dimen/app_padding_16dp"
-        android:drawableStart="@drawable/ic_search_24"
-        android:hint="Поиск"
-        android:paddingStart="20dp" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:title="Пушкина, 61/2"
+            app:titleMargin="@dimen/app_padding_16dp" />
 
-    <TextView
-        android:id="@+id/recom_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/app_padding_16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="@dimen/app_padding_16dp"
+        <EditText
+            android:id="@+id/search_edt_txt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="@dimen/app_padding_16dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="@dimen/app_padding_16dp"
+            android:drawableStart="@drawable/ic_search_24"
+            android:hint="Поиск"
+            android:paddingStart="20dp" />
 
-        android:text="Рекомендуем"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/recom_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_padding_16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/app_padding_16dp"
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recom_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/app_padding_16dp"
-        android:layout_marginTop="@dimen/app_padding_16dp"
-        android:layout_marginEnd="@dimen/app_padding_16dp" />
+            android:text="Рекомендуем"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/categories_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/app_padding_16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="@dimen/app_padding_16dp"
-        android:text="Категории"
-        android:textSize="20sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recom_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_padding_16dp"
+            android:layout_marginTop="@dimen/app_padding_16dp"
+            android:layout_marginEnd="@dimen/app_padding_16dp" />
 
-<!--    <TextView
-        android:id="@+id/reconstruction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="На стадии разработки..."
-        android:layout_marginStart="@dimen/app_padding_16dp"
-        android:layout_marginTop="@dimen/app_padding_16dp"/>-->
+        <TextView
+            android:id="@+id/categories_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_padding_16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/app_padding_16dp"
+            android:text="Категории"
+            android:textSize="20sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categories_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/app_padding_16dp"
-        android:layout_marginTop="@dimen/app_padding_16dp"
-        android:layout_marginEnd="@dimen/app_padding_16dp" />
+        <!--    <TextView
+                android:id="@+id/reconstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="На стадии разработки..."
+                android:layout_marginStart="@dimen/app_padding_16dp"
+                android:layout_marginTop="@dimen/app_padding_16dp"/>-->
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/basket_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:layout_gravity="end"
-        android:layout_margin="@dimen/app_padding_16dp"
-        app:icon="@drawable/ic_basket"
-        android:textSize="12sp"
-        android:visibility="gone"
-        tools:text="+1400 тенге" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_padding_16dp"
+            android:layout_marginTop="@dimen/app_padding_16dp"
+            android:layout_marginEnd="@dimen/app_padding_16dp" />
 
-</LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/basket_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/app_padding_16dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:icon="@drawable/ic_basket"
+            tools:text="+1400 тенге" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
