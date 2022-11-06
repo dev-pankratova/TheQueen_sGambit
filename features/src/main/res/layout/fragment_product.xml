@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="100dp"
+    android:layout_marginStart="@dimen/app_padding_16dp"
+    android:layout_marginEnd="@dimen/app_padding_16dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        tools:text="Наименование продукта"
+        android:layout_marginTop="24dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/weight_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        tools:text="150 гр"/>
+
+    <TextView
+        android:id="@+id/allergen_xt"
+        android:text="Аллерген"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/allergen_input_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        tools:text="лактоза"/>
+
+    <TextView
+        android:id="@+id/compound_xt"
+        android:text="Состав:"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/compound_text_xt"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="кукурузная крупа, сахар-песок,масло подсолнечное рафинированное дезодорированное,соль поваренная пищевая, вода питьевая, ароматизатор идентичный натуральному ванилин."/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="12sp"
+        android:layout_margin="@dimen/app_padding_16dp"
+        tools:text="+1400 тенге" />
+</LinearLayout>
