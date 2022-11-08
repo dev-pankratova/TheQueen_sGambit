@@ -39,7 +39,7 @@ class SetMealPlanFragment2 : BaseFragment(R.layout.fragment_set_meal_plan_2) {
     private fun addAllergen() {
         binding.apply {
             if (check1.isChecked) {
-                registeredUser?.allergens?.add("Laktoza")
+                registeredUser?.allergens?.add("laktoza")
             }
             if (check2.isChecked) {
                 registeredUser?.allergens?.add("gluten")
